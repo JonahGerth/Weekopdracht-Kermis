@@ -1,0 +1,204 @@
+import java.util.Scanner;
+
+public class Attractie {
+	String draaien;
+	double prijs;
+	public Attractie () {
+		
+	}
+	
+	public class Botsauto extends Attractie{
+		
+		private String draaien = "Je zit in de botsauto's";
+		private double prijs = 2.50;
+		
+		public Botsauto(String draaien, double prijs) {
+			super();
+			this.draaien = draaien;
+			this.prijs = prijs;
+		}
+		
+		public Botsauto() {
+			
+		}
+
+		public String getName() {
+			return this.draaien;
+		}
+		public double getPrijs() {
+			return this.prijs;
+		}
+	}
+	public class Spin extends Attractie{
+		
+		private String draaien = "Bang voor spinnen?";
+		private double prijs = 2.50;
+		
+		public Spin(String draaien, double prijs) {
+			super();
+			this.draaien = draaien;
+			this.prijs = prijs;
+		}
+		
+		public Spin() {
+		
+		}
+
+		public String getName() {
+			return this.draaien;
+		}
+		public double getPrijs() {
+			return this.prijs;
+		}
+	}
+	public class Spookhuis extends Attractie{
+		
+		private String draaien = "Het spookt hier";
+		private double prijs = 2.50;
+		
+		public Spookhuis(String draaien, double prijs) {
+			super();
+			this.draaien = draaien;
+			this.prijs = prijs;
+		}
+		
+		public Spookhuis() {
+			
+		}
+
+		public String getName() {
+			return this.draaien;
+		}
+		public double getPrijs() {
+			return this.prijs;
+		}
+	}
+	public class Ladderklimmen extends Attractie{
+		
+		private String draaien = "Je ben bij het ladderklimmen";
+		private double prijs = 2.50;
+		
+		public Ladderklimmen(String draaien, double prijs) {
+			super();
+			this.draaien = draaien;
+			this.prijs = prijs;
+		}
+		
+		public Ladderklimmen() {
+			
+		}
+
+		public String getName() {
+			return this.draaien;
+		}
+		public double getPrijs() {
+			return this.prijs;
+		}
+	}
+	public class Spiegelpaleis extends Attractie{
+		
+		private String draaien = "Schrik niet van je eigen weerspiegeling";
+		private double prijs = 2.50;
+		
+		public Spiegelpaleis(String draaien, double prijs) {
+			super();
+			this.draaien = draaien;
+			this.prijs = prijs;
+		}
+		
+		public Spiegelpaleis() {
+		
+		}
+
+		public String getName() {
+			return this.draaien;
+		}
+		public double getPrijs() {
+			return this.prijs;
+		}
+	}
+	public class Hawaii extends Attractie{
+		
+		private String draaien = "Je zit in de Hawaii";
+		private double prijs = 2.50;
+		
+		public Hawaii(String draaien, double prijs) {
+			super();
+			this.draaien = draaien;
+			this.prijs = prijs;
+		}
+		
+		public Hawaii() {
+		
+		}
+
+		public String getName() {
+			return this.draaien;
+		}
+		public double getPrijs() {
+			return this.prijs;
+		}
+	}
+public static void main(String []args) {
+	 
+	System.out.println("Welkom op de kermis!");
+	System.out.println("In welke attractie wilt u?");
+	System.out.println("Typ 1 voor de botsauto's");
+	System.out.println("Typ 2 voor de Spin");
+	System.out.println("Typ 3 voor het Spiegelpalijs");
+	System.out.println("Typ 4 voor het Spookhuis");
+	System.out.println("Typ 5 voor Hawaii");
+	System.out.println("Typ 6 voor het Ladderklimmen");
+	System.out.println("Typ 7 om de kermis te verlaten");
+	
+	Botsauto bots = new Botsauto();
+	Hawaii hawaii = new Hawaii();
+	Ladderklimmen ladder = new Ladderklimmen();
+	Spin spinnen = new Spin();
+	Spookhuis spook = new Spookhuis();
+	Spiegelpaleis spiegel = new Spiegelpaleis();
+	
+	
+	while(true) {
+		
+		Scanner scan = new Scanner(System.in);
+		int kies = scan.nextInt();
+	
+	if (kies == 1) {
+		System.out.println(bots.draaien);
+		System.out.println(bots.prijs);
+		break;
+	} 
+	if (kies == 2) {
+		System.out.println(spinnen.draaien);
+		System.out.println(spinnen.prijs);
+	}
+	if (kies == 3) {
+		System.out.println(spiegel.draaien);
+		System.out.println(spiegel.prijs);
+		break;
+	} 
+	if (kies == 4) {
+		System.out.println(spook.draaien);
+		System.out.println(spook.prijs);
+		break;
+	}
+	if (kies == 5) {
+		System.out.println(hawaii.draaien);
+		System.out.println(hawaii.prijs);
+		break;
+	} 
+	if (kies == 6) {
+		System.out.println(ladder.draaien);
+		System.out.println(ladder.prijs);
+		break;
+		}
+	if (kies == 7) {
+		System.out.println("Bedankt en tot ziens");
+		}
+	continue;
+			
+		}
+	}	
+}
+
